@@ -1,0 +1,58 @@
+article {
+  background-color: rgb(198, 206, 229);
+  text-align: left;
+}
+
+nav {
+  background-color: lightcyan;
+  text-align: left;
+}
+
+header {
+  background-color: aliceblue;
+  text-align: left;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header aside aside "
+    "article nav nav";
+  grid-template-rows: 50vh 50vh;
+  padding: 0.5%;
+}
+
+header {
+  grid-area: header;
+  padding: 2%;
+}
+
+aside {
+  grid-area: aside;
+  object-fit: cover;
+  width: 100%;
+}
+
+nav {
+  grid-area: nav;
+  padding: 2%;
+}
+
+article {
+  grid-area: article;
+  padding: 2%;
+}
+
+/* body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50vh 50vh;
+  margin: 1%;
+  row-gap: 5px;
+  object-fit: cover;
+}
+
+aside {
+  object-fit: cover;
+  width: 100%;
+} */
